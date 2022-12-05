@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block css %}
+<link rel="stylesheet" href="/static/css/main.css">
+{% endblock %}
+
+{% block title %}
+Главная страница
+{% endblock %}
+
+{% block heading %}
+{% endblock %}
+
+{% block content %}
+    <div id="maia-main" role="main">
+        <div style="margin: 0 auto;width: fit-content">
+            <div style="width: fit-content">Доброго времени суток, учитель!</div>
+            <div style="width: fit-content">Здесь ты можешь автоматизировать проверку тестов.</div>
+            <div style="width: fit-content">Загрузи проверяемую работу ниже.</div>
+        </div>
+        <div class="maia-col-12" id="subaccount_container">
+            <form class="maia-form-group-1" action="/tester" method="POST" enctype="multipart/form-data">
+                <input type="file" name="file" />
+                <input type="submit" />
+            </form>
+        </p>
+    </div>
+{% endblock %}

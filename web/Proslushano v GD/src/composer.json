@@ -1,0 +1,6 @@
+{
+    "name": "kekovina/tulactf-2022-php-jpg",
+    "require": {
+        "firebase/php-jwt": "^6.3"
+    }
+}

@@ -1,0 +1,13 @@
+version: '3'
+services:
+  app:
+    image: flask-serv
+    environment:
+      FLAG: 'TulaCTF{0h_734ch3r_my_734ch3r}'
+      SECRET_KEY: '4f84b8a4d62a41088273b62cdbaaecb1'
+    restart: on-failure
+    volumes:
+      - ./flask-serv:/app
+    ports:
+      - 12007:5000
+    command: python ./app.py
